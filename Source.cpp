@@ -149,6 +149,7 @@ public:
 
 
 int main() {
+	int x;
 	srand(time(0)); 
 
 	Book myBook; 
