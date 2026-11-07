@@ -17,9 +17,7 @@ private :
 	string type;
 	string size;
 	
-
 public:
-
 	void setTemp(float t);
 
 	void setType(string t);

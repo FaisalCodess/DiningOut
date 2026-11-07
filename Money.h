@@ -3,8 +3,8 @@
 // Lemar Al Salman 20250466
 // Mohammad Abu Roumi 20250512
 
-#ifndef Money_H
-#define Money_H
+#ifndef MONEY_H
+#define MONEY_H
 
 #include <iostream>
 #include <string>
@@ -39,4 +39,5 @@ public:
     
     ~Money() ;
 };
+
 #endif
