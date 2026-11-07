@@ -5,8 +5,10 @@
 
 #ifndef DRINKS_H
 #define DRINKS_H
+
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 class Drinks {
@@ -18,30 +20,31 @@ private :
 
 public:
 
-	void setTemp(float t) ;
+	void setTemp(float t);
 
-	void setType(string t) ;
+	void setType(string t);
 
-	void setSize(string s) ;
+	void setSize(string s);
 
-	float getTemp() const ;
+	float getTemp() const;
 
-	string getType() const ;
+	string getType() const;
 
 	string getSize() const;
 
-	Drinks(float t = 0.0, string type = "NA", string size = "NA") ;
+	Drinks(float t = 0.0, string type = "NA", string size = "NA");
     
-    Drinks(const Drinks &d) ;
+    Drinks(const Drinks &d);
 
-	bool isRefillable() const ;
+	bool isRefillable() const;
 
-	bool isHot() const ;
+	bool isHot() const;
 
-	bool isCold() const ;
+	bool isCold() const;
 
-	bool isNormal() const ;
+	bool isNormal() const;
 
-	void print() ;
+	void print();
 };
+
 #endif
