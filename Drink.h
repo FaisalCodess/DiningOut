@@ -21,7 +21,7 @@ private :
 	float price;
 	
 public:
-	Drink(float t = 0.0, string type = "NA", string size = "NA");
+	Drink(float t = 0.0, string type = "NA", string size = "NA", int c = 0, bool s = false, float p = 0.0);
     Drink(const Drink &d);
 
 	void setTemp(float t);
