@@ -17,6 +17,8 @@ private :
 	string name;
 	string size;
 	int calories;
+	bool hasSugar;
+	float price;
 	
 public:
 	Drink(float t = 0.0, string type = "NA", string size = "NA");
@@ -26,17 +28,21 @@ public:
 	void setName(string t);
 	void setSize(string s);
 	void setCalories(int c);
+	void setHasSugar(bool s);
+	void setPrice(float p);
 
 	float getTemp() const;
 	string getType() const;
 	string getSize() const;
 	int getCalories() const;
+	bool getHasSugar() const;
+	float getPrice() const;
 
 	bool isRefillable() const;
 	bool isHot() const;
 	bool isCold() const;
 	bool isNormal() const;
-	void print();
+	void print() const;
 
 	~Drink();
 };
