@@ -19,25 +19,19 @@ private:
 public:
     Money(float amount = 0.0, string currency = "JOD") ;
 
-    float getAmount()const ;
+    void setCurrency(string curr);
+    void setAmount(float amt);
+
+    string getCurrency() const;
+    float getAmount() const;    
     
-    void setAmount(float amt) ;
-    
-    string getCurrency()const ;
-    
-    void setCurrency(string curr) ;
-    
-    Money  addAmount(const Money& other) const;
-    
+    Money  addAmount(const Money& other) const;    
     Money  subtractAmount(const Money& other) const;
-    
     Money multiplyBy(float m) const;
-    
     Money divideBy(int d) const;
-    
     void print() {};
     
-    ~Money() ;
+    ~Money();
 };
 
 #endif

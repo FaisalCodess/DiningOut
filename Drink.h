@@ -3,46 +3,42 @@
 // Lemar Al Salman 20250466
 // Mohammad Abu Roumi 20250512
 
-#ifndef DRINKS_H
-#define DRINKS_H
+#ifndef DRINK_H
+#define DRINK_H
 
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-class Drinks {
+class Drink {
 private :
 	float temp;
-	string type;
+	string name;
 	string size;
+	int calories;
 	
 public:
+	Drink(float t = 0.0, string type = "NA", string size = "NA");
+    Drink(const Drink &d);
+
 	void setTemp(float t);
-
-	void setType(string t);
-
+	void setName(string t);
 	void setSize(string s);
+	void setCalories(int c);
 
 	float getTemp() const;
-
 	string getType() const;
-
 	string getSize() const;
-
-	Drinks(float t = 0.0, string type = "NA", string size = "NA");
-    
-    Drinks(const Drinks &d);
+	int getCalories() const;
 
 	bool isRefillable() const;
-
 	bool isHot() const;
-
 	bool isCold() const;
-
 	bool isNormal() const;
-
 	void print();
+
+	~Drink();
 };
 
 #endif
