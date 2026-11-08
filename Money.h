@@ -25,11 +25,11 @@ public:
     string getCurrency() const;
     float getAmount() const;    
     
-    Money  addAmount(const Money& other) const;    
-    Money  subtractAmount(const Money& other) const;
+    Money addAmount(const Money& other) const;    
+    Money subtractAmount(const Money& other) const;
     Money multiplyBy(float m) const;
     Money divideBy(int d) const;
-    void print() {};
+    void print() const;
     
     ~Money();
 };
