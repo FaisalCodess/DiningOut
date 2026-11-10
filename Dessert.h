@@ -6,7 +6,6 @@
 #ifndef DESSERT_H
 #define DESSERT_H
 
-#include <iostream>
 #include <string>
 
 using namespace std;
