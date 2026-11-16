@@ -6,6 +6,7 @@
 #ifndef RESTAURANT_H
 #define RESTAURANT_H
 
+#include "Menu.h"
 #include <string>
 
 using namespace std;
